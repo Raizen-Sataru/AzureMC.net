@@ -1,0 +1,103 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    color: #00f0ff;
+    animation: glow 2s infinite alternate;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.top-kills {
+    text-align: right;
+}
+
+.top-kills h2 {
+    font-size: 1.5rem;
+    color: #ff5050;
+}
+
+.top-kills ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.top-kills li {
+    margin: 5px 0;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Server Info */
+.server-info {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.server-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00ff88;
+}
+
+.server-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Banners */
+.banners {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner-slide {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    animation: slide 12s infinite;
+}
+
+/* Animations */
+@keyframes glow {
+    from { text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff; }
+    to { text-shadow: 0 0 20px #00f0ff, 0 0 30px #00f0ff; }
+}
+
+@keyframes slide {
+    0%, 33% { transform: translateX(0%); opacity: 1; }
+    44%, 66% { transform: translateX(-100%); opacity: 0; }
+    77%, 100% { transform: translateX(-200%); opacity: 1; }
+}
